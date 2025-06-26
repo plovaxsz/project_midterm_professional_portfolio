@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:80' # Map port 3000 di komputer Anda ke port 80 di dalam container Nginx
+    networks:
+      - portfolio-net
+
+  backend:
+    build:
+      context: ./backend_sanity_portfolio
+      dockerfile: Dockerfile
+    ports:
+      - '3333:3333' # Map port 3333 di komputer Anda ke port 3333 di dalam container
+    networks:
+      - portfolio-net
+    volumes:
+      - ./backend_sanity_portfolio:/app # Sinkronisasi file agar perubahan tidak hilang
+      - /app/node_modules # Kecualikan node_modules dari sinkronisasi
+
+networks:
+  portfolio-net:
+    driver: bridge

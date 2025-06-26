@@ -6,7 +6,7 @@ import { client } from '../../client';
 import './Footer.scss';
 
 const Footer = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [formData, setFormData] = useState({ username: '', email: '', message: '' });
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -22,7 +22,7 @@ const Footer = () => {
 
     const contact = {
       _type: 'contact',
-      name: formData.username,
+      name: formData.username, // Menggunakan formData.username
       email: formData.email,
       message: formData.message,
     };
@@ -42,11 +42,11 @@ const Footer = () => {
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
-          <a href="mailto:hello@micael.com" className="p-text">hello@micael.com</a>
+          <a href="mailto:hello@micael.com" className="p-text">joshabrahamefendi2005@gmail.com</a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
-          <a href="tel:+1 (123) 456-7890" className="p-text">+1 (123) 456-7890</a>
+          <a href="tel:+1 (123) 456-7890" className="p-text">(+62) 82190272079</a>
         </div>
       </div>
       {!isFormSubmitted ? (
@@ -84,3 +84,4 @@ export default AppWrap(
   'contact',
   'app__whitebg',
 );
+
