@@ -23,7 +23,7 @@ Welcome, and thank you for reviewing my midterm project. This document serves as
 6.  [**Accessing the Running Application**](#6-accessing-the-running-application-)
 7.  [**Troubleshooting Common Issues**](#7-troubleshooting-common-issues-)
 
----
+
 
 ### **1. Architectural Philosophy 🏛️**
 
@@ -63,7 +63,6 @@ To ensure a smooth setup, please verify that the following tools are installed a
 * **Docker Desktop:** The engine for running containers. It must be open and running in the background for Docker commands to work.
     * [Download Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
----
 
 ### **4. Setup & Configuration: A Step-by-Step Walkthrough 🗺️**
 
@@ -71,7 +70,6 @@ To ensure a smooth setup, please verify that the following tools are installed a
 
 This step downloads a copy of the project's source code from GitHub to your local machine.
 
-```bash
 # 1. Use the 'git clone' command followed by the repository URL
 git clone [https://github.com/plovaxsz/project_midterm_professional_portfolio.git](https://github.com/plovaxsz/project_midterm_professional_portfolio.git)
 
@@ -265,7 +263,6 @@ To ensure a smooth setup, please verify that the following tools are installed a
 
 This step downloads a copy of the project's source code from GitHub to your local machine.
 
-```bash
 # 1. Use the 'git clone' command followed by the repository URL
 git clone [https://github.com/plovaxsz/project_midterm_professional_portfolio.git](https://github.com/plovaxsz/project_midterm_professional_portfolio.git)
 
